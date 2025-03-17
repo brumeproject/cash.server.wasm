@@ -1,6 +1,6 @@
 # cash.server.wasm
 
-WebAssembly bundle for Wallet
+WebAssembly bundle for Cash server
 
 ```bash
 npm i @brumeproject/cash.server.wasm
