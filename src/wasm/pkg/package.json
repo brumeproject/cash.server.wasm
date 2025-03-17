@@ -9,7 +9,7 @@
   "license": "Unlicense",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brumewallet/cash.server.wasm"
+    "url": "https://github.com/brumeproject/cash.server.wasm"
   },
   "files": [
     "cash_server_wasm_bg.wasm",
