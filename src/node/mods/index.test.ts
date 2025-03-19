@@ -37,7 +37,7 @@ const minimumBigInt = 100000n
 const minimumBase16 = minimumBigInt.toString(16).padStart(64, "0")
 using minimumMemory = base16_decode_mixed(minimumBase16)
 
-using mixin = new CashServerWasm.NetworkMixin(chainIdMemory, contractMemory, receiverMemory, nonceMemory)
+using mixin = new CashServerWasm.NetworkMixin(contractMemory, receiverMemory, nonceMemory)
 
 const start = performance.now()
 using generated = mixin.generate(minimumMemory)
