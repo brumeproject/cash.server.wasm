@@ -1,6 +1,10 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
+export function __wbg_secp256k1signatureandrecovery_free(a: number, b: number): void;
+export function secp256k1signatureandrecovery_new(a: number, b: number, c: number): void;
+export function secp256k1signatureandrecovery_from_bytes(a: number, b: number): void;
+export function secp256k1signatureandrecovery_to_bytes(a: number): number;
 export function __wbg_secp256k1signingkey_free(a: number, b: number): void;
 export function secp256k1signingkey_new(): number;
 export function secp256k1signingkey_from_bytes(a: number, b: number): void;
@@ -8,8 +12,6 @@ export function secp256k1signingkey_to_bytes(a: number): number;
 export function secp256k1signingkey_verifying_key(a: number): number;
 export function secp256k1signingkey_sign_prehash_recoverable(a: number, b: number, c: number): void;
 export function secp256k1signingkey_random(): number;
-export function __wbg_secp256k1signatureandrecovery_free(a: number, b: number): void;
-export function secp256k1signatureandrecovery_to_bytes(a: number): number;
 export function __wbg_secp256k1verifyingkey_free(a: number, b: number): void;
 export function secp256k1verifyingkey_from_sec1_bytes(a: number, b: number): void;
 export function secp256k1verifyingkey_recover_from_prehash(a: number, b: number, c: number): void;

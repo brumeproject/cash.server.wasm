@@ -523,6 +523,48 @@ export class Secp256k1SignatureAndRecovery {
         wasm.__wbg_secp256k1signatureandrecovery_free(ptr, 0);
     }
     /**
+    * @param {Memory} signature
+    * @param {number} recovery
+    */
+    constructor(signature, recovery) {
+        try {
+            const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+            _assertClass(signature, Memory);
+            wasm.secp256k1signatureandrecovery_new(retptr, signature.__wbg_ptr, recovery);
+            var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+            var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+            var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+            if (r2) {
+                throw takeObject(r1);
+            }
+            this.__wbg_ptr = r0 >>> 0;
+            Secp256k1SignatureAndRecoveryFinalization;
+            return this;
+        } finally {
+            wasm.__wbindgen_add_to_stack_pointer(16);
+        }
+    }
+    /**
+    * @param {Memory} input
+    * @returns {Secp256k1SignatureAndRecovery}
+    */
+    static from_bytes(input) {
+        try {
+            const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
+            _assertClass(input, Memory);
+            wasm.secp256k1signatureandrecovery_from_bytes(retptr, input.__wbg_ptr);
+            var r0 = getDataViewMemory0().getInt32(retptr + 4 * 0, true);
+            var r1 = getDataViewMemory0().getInt32(retptr + 4 * 1, true);
+            var r2 = getDataViewMemory0().getInt32(retptr + 4 * 2, true);
+            if (r2) {
+                throw takeObject(r1);
+            }
+            return Secp256k1SignatureAndRecovery.__wrap(r0);
+        } finally {
+            wasm.__wbindgen_add_to_stack_pointer(16);
+        }
+    }
+    /**
     * @returns {Memory}
     */
     to_bytes() {
