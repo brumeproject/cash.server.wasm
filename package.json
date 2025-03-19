@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "@brumeproject/cash.server.wasm",
+  "name": "@brumewallet/cash.server.wasm",
   "version": "1.0.2",
   "description": "WebAssembly bundle for Cash server",
   "homepage": "https://github.com/brumeproject/cash.server.wasm",
