@@ -48,10 +48,8 @@ checksum = "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b"
 name = "cash_server_wasm"
 version = "1.0.0"
 dependencies = [
- "base16_wasm",
  "network_wasm",
  "secp256k1_wasm",
- "sha3_wasm",
 ]
 
 [[package]]

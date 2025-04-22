@@ -55,9 +55,7 @@
     "deno"
   ],
   "peerDependencies": {
-    "@hazae41/base16.wasm": "^1.0.5",
     "@hazae41/network.wasm": "^1.0.5",
-    "@hazae41/secp256k1.wasm": "^1.0.12",
-    "@hazae41/sha3.wasm": "^1.0.4"
+    "@hazae41/secp256k1.wasm": "^1.0.12"
   }
 }
