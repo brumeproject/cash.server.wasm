@@ -20,3 +20,4 @@ opt-level = "z"
 base16_wasm = { path = "../../node_modules/@hazae41/base16.wasm/dist/wasm" }
 network_wasm = { path = "../../node_modules/@hazae41/network.wasm/dist/wasm" }
 secp256k1_wasm = { path = "../../node_modules/@hazae41/secp256k1.wasm/dist/wasm" }
+sha3_wasm = { path = "../../node_modules/@hazae41/sha3.wasm/dist/wasm" }

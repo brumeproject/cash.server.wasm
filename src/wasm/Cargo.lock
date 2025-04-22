@@ -51,6 +51,7 @@ dependencies = [
  "base16_wasm",
  "network_wasm",
  "secp256k1_wasm",
+ "sha3_wasm",
 ]
 
 [[package]]
